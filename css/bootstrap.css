@@ -4,6 +4,16 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+ .redout{
+   color: red;
+ }
+
+.card-img-perfilE{
+  width:185px; 
+  height:30%;
+
+}
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -4532,6 +4542,15 @@ input[type="button"].btn-block {
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
 }
+.card-img-left {
+  position: absolute;
+  left: 0px;
+  
+  width: 20%;
+  height: 100%;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
 
 .card-img-bottom {
   width: 100%;
@@ -5500,13 +5519,13 @@ button.close {
   margin-top: 10px;
   margin-left: 10px;
   border-radius: 12px 12px 12px 12px;
-  width: 73.5%;
+  width: 72.5%;
   height: auto;
   padding-top: 0px;
   padding-right: 0%;
   padding-bottom: 0%;
   padding-left: 0%;
-  right: 0px;
+  right: 15px;
   display: inline-block;
   /*overflow: auto;*/
   background-color: rgba(209, 205, 205, 0.76);

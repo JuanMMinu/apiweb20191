@@ -13,6 +13,29 @@
 
     <link rel="stylesheet" href="css/coming-sssoon.css" rel="stylesheet" />
 
+    <link rel="stylesheet" href="css/css/Libro/bootstrap.css" />
+
+    <link rel="stylesheet" href="css/css/Libro/coming-sssoon.css" />
+    <link rel="stylesheet" href="css/css/Libro/rotating-card.css" >
+    <!--     Fonts     -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet" />
+    <link href="http://fonts.googleapis.com/css?family=Grand+Hotel" rel="stylesheet" type="text/css" />
+      
+      <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      
+      <script>
+		$(function () {
+			$("#datepickerOne").datepicker();
+            $("#datepicker").datepicker();
+		});
+          
+	</script>
+	<script src="app.js"></script>
+
+
+
     <!--     Fonts     -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet" />
     <link href="http://fonts.googleapis.com/css?family=Grand+Hotel" rel="stylesheet" type="text/css" />
@@ -38,7 +61,8 @@
 
                         <a href="Sesion.html">
                             <i class="fa fa-user"></i>
-                            Iniciar Sesión
+                            Juan Minu<br>
+                            <i class="redout">Cerrar Sesion</i>
                         </a>
     
                 </li>    
@@ -54,46 +78,61 @@
         <button class="opc">Libros en Posesion</button>
     </div>
     <div class="misReservas">
-        
+            <section class="my-3">
+                    <div class="mx-5 my-5 card col-md-11 shadow  mb-5 bg-white rounded" style="height: 280px;">
+                        
+                            <div class="mb-3 " >
+                                <div class="row no-gutters  ">
+                                    
+                                    <img src="https://static.abebookscdn.com/cdn/es/imagenes/100-mejores-libros/crimen.jpg" class="card-img-perfilE" alt="...">
+                                    <div class="mx-4 my-2 col-md-3 shadow p-4 mb-3 bg-white rounded" >
+                                        <div class="car-body">
+                                            <h6>Titulo: Crimen y Castigo</h6>
+                                            <h6>Autor: Fiódor Dostoievski</h6>
+                                            <h6>Cateoria: Novela</h6>
+                                            <h6>Disponiles: 3</h6>
+                                            <h6>Edicion: 1</h6>
+                                            <h6>Idioma: Español</h6>
+            
+                                            <h6>Existentes: 12</h6>
+                                            <h6>ISBN: 123b49</h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                    <div class="my-2 col-md-3 shadow p-2 mb-3 bg-white rounded">
+                                        <h4 class="text-center mb-5">Tiempo de reserva</h4>
+                                        <div class="mb-3">
+                                            <label class="required">
+                                                  <a class="">Inicio :</a>
+                                            <input class="mx-4" type="text" id="datepicker" name="card_expiry" maxlength="7" placeholder="  12/1/2015"
+                                                required disabled>
+                                            </label>
+                                        </div>
+                                        <div class="">
+                                            <label class="required">
+                                                  <a class="mx-2">Fin :</a>
+                                            <input class="mx-4" type="text" id="datepickerOne" name="card_expiry" maxlength="7" placeholder="  20/1/2015"
+                                                required disabled>
+                                            </label>
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+                           
+                        </div>
+            
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <a class="btn btn-danger btn-lg mx-5" href="index.html" role="button">Cancelar</a>
+                        <div class="col-md-2"></div>
+                        <a class="btn btn-success btn-lg " href="ExitoResera.html" role="button">Hacer reserva</a>
+                        
+                    </div>
+                </section>
 
-            <div class="card-group">
-                <div class="libro">
-                    <img class="card-img-top" src="https://static.abebookscdn.com/cdn/es/imagenes/100-mejores-libros/crimen.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Crimen y Castigo</h5>
-                        <p class="card-text">Autor: Fiódor Dostoievski.</p>
-                        <a href="#" class="btn btn-primary">Reservar</a>
-                    </div>
-                    <div class="card-footer text-muted">
-                        3 Disponibles
-                    </div>
-                </div>
-                <div class="libro">
-                    <img class="card-img-top" src="https://static.abebookscdn.com/cdn/es/imagenes/100-mejores-libros/100soledad.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Cien Años de Soledad</h5>
-                        <p class="card-text">Autor: Gabriel Garcia Marquez</p>
-                        <a href="#" class="btn btn-primary">Reservar</a>
-                    </div>
-                    <div class="card-footer text-muted">
-                        1 Disponibles
-                    </div>
-                </div>
-                <div class="libro">
-                    <img class="card-img-top" src="https://images-na.ssl-images-amazon.com/images/I/41elkE8vsbL._SX323_BO1,204,203,200_.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">El Nombre de la Rosa</h5>
-                        <p class="card-text">Autor: Umberto Eco</p>
-                        <a href="#" class="btn btn-primary">Reservar</a>
-                    </div>
-                    <div class="card-footer text-muted">
-                        No Disponibles
-                    </div>
-                </div>
-            </div>
-
-
-
+            
     </div>
 
     

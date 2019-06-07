@@ -357,7 +357,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 
 /*           Navigation Bar             */
 .logoU{
-    background-color: rgb(212, 212, 212);
+    background-color: rgb(212, 212, 212, 0.62);
 }
 /**************************************************************/
 .navbar{
@@ -549,7 +549,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 }
 .navbar-collapse, .navbar-form {
     border-color: rgba(0, 0, 0, 0);
-    background-color:rgba(255, 255, 255, 0.8);
+    background-color:rgba(255, 255, 255, 0.5);
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     background-color: rgba(0,0,0,0);

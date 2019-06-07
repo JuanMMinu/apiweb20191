@@ -13,7 +13,7 @@
  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
  */
 
-
+ 
 .form-control::-moz-placeholder{
    color: #DDDDDD;
    opacity: 1;
@@ -351,7 +351,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 
 /*           Navigation Bar             */
 .logoU{
-    background-color: rgb(212, 212, 212);
+    background-color: rgba(212, 212, 212, 0.62);
     border-radius: 11px 11px 11px 11px;
     -moz-border-radius: 11px 11px 11px 11px;
     -webkit-border-radius: 11px 11px 11px 11px;
@@ -546,7 +546,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 }
 .navbar-collapse, .navbar-form {
     border-color: rgba(0, 0, 0, 0);
-    background-color:rgba(255, 255, 255, 0.8);
+    background-color:rgba(255, 255, 255, 0.43);
     border-radius: 11px 11px 11px 11px;
     -moz-border-radius: 11px 11px 11px 11px;
     -webkit-border-radius: 11px 11px 11px 11px;

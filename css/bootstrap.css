@@ -5464,6 +5464,54 @@ button.close {
   background-color: rgba(209, 205, 205, 0.76);
 }
 
+.opc{
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgba(243, 243, 243, 0.89);
+  
+  border-radius: 12px 12px 12px 12px;
+  
+}
+
+.opc:hover{
+  
+  background-color: rgb(238, 235, 235);
+  
+}
+
+.opc:focus{
+  color: black;
+  background-color: rgb(238, 235, 235);
+  
+}
+.opc-activo{
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(238, 235, 235);
+  
+  border-radius: 12px 12px 12px 12px;
+  
+}
+.misReservas{
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 12px 12px 12px 12px;
+  width: 73.5%;
+  height: auto;
+  padding-top: 0px;
+  padding-right: 0%;
+  padding-bottom: 0%;
+  padding-left: 0%;
+  right: 0px;
+  display: inline-block;
+  /*overflow: auto;*/
+  background-color: rgba(209, 205, 205, 0.76);
+}
+
 .modal-dialog {
   position: relative;
   width: auto;

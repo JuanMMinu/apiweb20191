@@ -4374,8 +4374,23 @@ input[type="button"].btn-block {
   color: #fff;
 }
 
+
+.libro{
+  border-radius: 12px 12px 12px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background-color: yellow;
+  border: 1px red;
+  width: 31.67%;
+  height: auto;
+  margin-left: 1%;
+  margin-right: 0.5%;
+  margin-top: 1%; 
+  margin-bottom: 1%; 
+  background-color: rgba(243, 243, 243, 0.89);
+}
 .card {
   position: relative;
+  
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -4482,7 +4497,9 @@ input[type="button"].btn-block {
 }
 
 .card-img-top {
-  width: 100%;
+  margin-left: 25%;
+  width: 50%;
+  height: 50%;
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
 }
@@ -4526,6 +4543,7 @@ input[type="button"].btn-block {
 
 .card-group {
   display: -ms-flexbox;
+
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -5367,49 +5385,53 @@ button.close {
 
 .numResultaods{
   position: absolute;
-  border: 1px solid red;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  margin-top: 10px;
   margin-bottom: 2px;
-  width: 72.4%;
+  width: 98.5%;
   height: auto;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-right: 20%;
   padding-bottom: 1%;
   padding-left: 1%;
 
-  right: 0px;
+  left: 10px;
+  border-radius: 12px 12px 12px 12px;
   
-  background-color: rgba(209, 205, 205, 0.76);
+  background-color: rgba(243, 243, 243, 0.89);
 }
 
 
 .menuFiltros{
   position: absolute;
-  border: 1px solid red;
-  
-  width: 27.1%;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  margin-top: 10px;
+  width: 25.1%;
   height: 100%;
   padding-top: 0px;
   padding-right: 0%;
   padding-bottom: 0%;
   padding-left: 0%;
   
-  left: 0px;
-  
-  background-color: rgba(209, 205, 205, 0.76);
+  left: 10px;
+  border-radius: 12px 12px 12px 12px;
+  background-color: rgba(243, 243, 243, 0.89);
 }
 .Listaresultados{
   position: absolute;
-  border: 1px solid red;
-  
-  width: 72.4%;
-  height: 80%;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  margin-left: 10px;
+  border-radius: 12px 12px 12px 12px;
+  width: 98.5%;
+  height: auto;
   padding-top: 0px;
   padding-right: 0%;
   padding-bottom: 0%;
   padding-left: 0%;
   top: 230px;
-  right: 0px;
-  
+  left: 0px;
+  display: inline-block;
+  /*overflow: auto;*/
   background-color: rgba(209, 205, 205, 0.76);
 }
 

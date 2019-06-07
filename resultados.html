@@ -59,7 +59,7 @@
                 </li>
                 <li class="nav-item my-4">
                     <form class="form-inline  my-4">
-                        <input class="form-control mr-sm-2 " type="search" placeholder="Aqui ingresa el nombre del libro" aria-label="Search" size="30" />
+                        <input id="searchLive" class="form-control mr-sm-2 " type="search" placeholder="Aqui ingresa el nombre del libro" aria-label="Search" size="30" />
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
                             Buscar
                         </button>
@@ -86,17 +86,15 @@
 
         <label class="numResultaods">3 resultados (0,39 segundos) </label>
         <select class="form-control " id="exampleFormControlSelectg">
-                <option selected disabled>Filtro</option>
-                <option>Todos</option>
-                <option>Narrativa</option>
-                <option>Drama</option>
-                <option>Novela</option>
+        
                 
-            </select>
+        </select>
         <div class="Listaresultados">
 
-            <div class="card-group">
-                <div class="libro">
+            <div id="resulLibros" class="card-group">
+                    
+                <!--
+<div class="libro">
                     <img class="card-img-top" src="https://static.abebookscdn.com/cdn/es/imagenes/100-mejores-libros/crimen.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Crimen y Castigo</h5>
@@ -131,17 +129,19 @@
                 </div>
             </div>
 
+                -->
 
-
+            </div>
         </div>
 
     </div>
     <!-- Script's -->
     <script src="bd/bd.js"></script>
-    <script src="js/init.js"></script>
+    
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="js/init.js"></script>
 
 
 </body></html>

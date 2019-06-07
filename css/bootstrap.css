@@ -2292,6 +2292,10 @@ textarea.form-control {
   }
 }
 
+
+
+
+
 .btn {
   display: inline-block;
   font-weight: 400;
@@ -2542,6 +2546,8 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
 }
 
+
+
 .btn-light {
   color: #212529;
   background-color: #f8f9fa;
@@ -2678,11 +2684,23 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
 }
 
+.btn-outline-sesion {
+  color: #000000;
+  background-color: transparent;
+  background-image: none;
+  border-color: #000000;
+}
 .btn-outline-success {
   color: #28a745;
   background-color: transparent;
   background-image: none;
   border-color: #28a745;
+}
+
+.btn-outline-sesion:hover {
+  color: rgb(55, 0, 255);
+  background-color: #c92323;
+  border-color: #000000;
 }
 
 .btn-outline-success:hover {
@@ -2695,6 +2713,10 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
 }
 
+.btn-outline-sesion:focus, .btn-outline-success.focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
+}
+
 .btn-outline-success.disabled, .btn-outline-success:disabled {
   color: #28a745;
   background-color: transparent;
@@ -2705,6 +2727,13 @@ fieldset:disabled a.btn {
   color: #fff;
   background-color: #28a745;
   border-color: #28a745;
+}
+
+.btn-outline-sesion:not(:disabled):not(.disabled):active, .btn-outline-sesion:not(:disabled):not(.disabled).active,
+.show > .btn-outline-sesion.dropdown-toggle {
+  color: #fff;
+  background-color: #000000;
+  border-color: #000000;
 }
 
 .btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus,

@@ -45,7 +45,7 @@ function isCategoria(arrayCategorias,categoria){
 }
 
 
-$(#);
+
 $("#searchLive").keypress(function(){
     var valor = $("#searchLive").val();
     var librosPorC = [];

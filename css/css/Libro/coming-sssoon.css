@@ -14,7 +14,11 @@
  */
 
 body{
+
     
+}
+section{
+    background: rgba(229, 229, 229, 0.62);
 }
 .form-control::-moz-placeholder{
    color: #DDDDDD;

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+
+    <title></title>
+    <meta name="description" content="Resultados de busqueda" />
+    <meta name="author" content="JorgeMuños-Juan Minu" />
+
+    <!--     Styles     -->
+    <link rel="stylesheet" href="css/css/Libro/bootstrap.css" />
+
+    <link rel="stylesheet" href="css/css/Libro/coming-sssoon.css" />
+    <link rel="stylesheet" href="css/css/Libro/rotating-card.css">
+    <!--     Fonts     -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet" />
+    <link href="http://fonts.googleapis.com/css?family=Grand+Hotel" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script>
+        $(function() {
+            $("#datepickerOne").datepicker();
+            $("#datepicker").datepicker();
+        });
+    </script>
+    <script src="app.js"></script>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="logoU">
+            <img src="images/Escudo-OK.png" width="100" height="140" class="d-inline-block align-top" alt="" />
+            <a class="navbar-brand my-4" href="index.html">Biblioteca Virtual <br />
+                Universidad del Cauca</a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+    </nav>
+
+
+
+    <div class="my-3">
+        <div class="jumbotron container text-center">
+            <h1 class="display-4 ">Reserva exitosa</h1>
+            <h4 class="text-success">Si, si es contigo</h4>
+            <div class="alert alert-warning text-center" role="alert">
+                <h4 >!Recuerda¡</h4>
+                <h5 >A partir de la fecha inicial  tienes 24 horas para reclamar el libro reservado, <br>de lo contrario se cancelara automaticamente la reserva  </h5>
+                
+            </div>
+            <hr class="my-2">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Mis reservas</a>
+                    <a class="btn btn-primary btn-lg" href="index.html" role="button">Nueva busqueda</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- -->
+
+
+
+    <!-- Script's -->
+    <script src="bd/bd.js"></script>
+    <script src="js/init.js"></script>
+
+
+    <!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>-->
+
+    <footer></footer>
+</body></html>

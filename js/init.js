@@ -77,7 +77,7 @@ $("#searchLive").keypress(function(){
 
 
 
-
+//Obtener libros por el filtro
 
 $('#exampleFormControlSelectg').change(function() {
     var valor = $( "#exampleFormControlSelectg option:selected" ).text()

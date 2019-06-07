@@ -112,7 +112,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     background-color: rgba(0,0,0,.0);
     font-weight: 400;
     opacity: 0.8;
-    padding: 8px 16px;
+    padding: 5px 16px;
 }
 .btn-round{
     border-width: 1px;
@@ -153,6 +153,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 .btn-success{
     color: #05AE0E;
     border-color: #05AE0E;
+    
 }
 .btn-warning{
     color: #FF9500;
@@ -351,14 +352,18 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 }
 
 /*           Navigation Bar             */
+.logoU{
+    background-color: rgb(212, 212, 212);
+}
 .navbar{
     border: 0 none;
     transition: all 0.4s;
     -webkit-transition: all 0.4s;
     font-size: 16px;
+    background-image: url("../images/biblio2.jpg");
 }
 .navbar-default {
-    background-color: #D9D9D9;
+    background-color: rgb(212, 212, 212);
     
 }
 .navbar .navbar-brand {
@@ -539,6 +544,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 }
 .navbar-collapse, .navbar-form {
     border-color: rgba(0, 0, 0, 0);
+    background-color:rgba(255, 255, 255, 0.8);
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     background-color: rgba(0,0,0,0);

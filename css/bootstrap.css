@@ -2618,7 +2618,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-primary:hover {
-  color: #fff;
+  color: rgb(197, 28, 28);
   background-color: #007bff;
   border-color: #007bff;
 }
@@ -2686,7 +2686,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-success:hover {
-  color: #fff;
+  color: rgb(0, 0, 0);
   background-color: #28a745;
   border-color: #28a745;
 }
@@ -6105,7 +6105,7 @@ button.bg-secondary:focus {
 a.bg-success:hover, a.bg-success:focus,
 button.bg-success:hover,
 button.bg-success:focus {
-  background-color: #1e7e34 !important;
+  background-color: #000000 !important;
 }
 
 .bg-info {

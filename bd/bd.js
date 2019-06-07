@@ -1,4 +1,4 @@
-const libroSeleccionado = [];
+var libroSeleccionado;
 
 
 const bd_libros = [{ "_id": 1, "title": "Crimen y Castigo", "isbn": "1933988273", "pageCount": 416, "thumbnailUrl": "https://static.abebookscdn.com/cdn/es/imagenes/100-mejores-libros/crimen.jpg", "authors": "Fiódor Dostoievski", "categories": "Novela" },

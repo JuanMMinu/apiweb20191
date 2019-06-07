@@ -25,7 +25,7 @@ $(document).ready(function(){
             librosPorC.push(bd_libros[i]);
     }
     for(var i = 0;i < librosPorC.length; i++){
-        librosHTML += "<div class='libro'><img class='card-img-top' src='"+ librosPorC[i].thumbnailUrl +"' alt='Card image cap'><div class='card-body'><h5 class='card-title'>"+librosPorC[i].title+"</h5><p class='card-text'>Autor: "+librosPorC[i].authors+"</p><a href='Libro.html' class='btn btn-primary'>Reservar</a></div><div class='card-footer text-muted'>5 Disponibles</div></div>";
+        librosHTML += "<div class='libro'><img class='card-img-top' src='"+ librosPorC[i].thumbnailUrl +"' alt='Card image cap'><div class='card-body'><h5 class='card-title'>"+librosPorC[i].title+"</h5><p class='card-text'>Autor: "+librosPorC[i].authors+"</p><a  id='btnHref"+i+"' onclick='libroR(\""+librosPorC[i].title+"\")'  class='btn btn-primary'>Reservar</a></div><div class='card-footer text-muted'>5 Disponibles</div></div>";
     }
     
     $("#resulLibros").html(librosHTML);
@@ -63,7 +63,7 @@ $("#searchLive").keypress(function(){
     }
     if(entro){
         for(var i = 0;i < librosPorC.length; i++){
-            librosHTML += "<div class='libro'><img class='card-img-top' src='"+ librosPorC[i].thumbnailUrl +"' alt='Card image cap'><div class='card-body'><h5 class='card-title'>"+librosPorC[i].title+"</h5><p class='card-text'>Autor: "+librosPorC[i].authors+"</p><a href='Libro.html' class='btn btn-primary'>Reservar</a></div><div class='card-footer text-muted'>5 Disponibles</div></div>";
+            librosHTML += "<div class='libro'><img class='card-img-top' src='"+ librosPorC[i].thumbnailUrl +"' alt='Card image cap'><div class='card-body'><h5 class='card-title'>"+librosPorC[i].title+"</h5><p class='card-text'>Autor: "+librosPorC[i].authors+"</p><a  id='btnHref"+i+"' onclick='libroR(\""+librosPorC[i].title+"\")' href='Libro.html' class='btn btn-primary'>Reservar</a></div><div class='card-footer text-muted'>5 Disponibles</div></div>";
         }
         
         $("#resulLibros").html(librosHTML);    
@@ -75,6 +75,20 @@ $("#searchLive").keypress(function(){
 
 });
 
+function libroR(id){
+    this.libroSeleccionado = [];
+    console.log(id,"holi");
+    for(var i = 0;i < bd_libros.length; i++){
+        if(bd_libros[i].title === id){
+            console.log("entor");
+            libroSeleccionado.push(bd_libros[i]);
+        }
+    }
+     window.location="Libro.html/libro?id="+id;
+}
+
+
+
 $('#exampleFormControlSelectg').change(function() {
     var valor = $( "#exampleFormControlSelectg option:selected" ).text()
     var librosPorC = [];
@@ -85,7 +99,7 @@ $('#exampleFormControlSelectg').change(function() {
                 librosPorC.push(bd_libros[i]);
         }
         for(var i = 0;i < librosPorC.length; i++){
-            librosHTML += "<div class='libro'><img class='card-img-top' src='"+ librosPorC[i].thumbnailUrl +"' alt='Card image cap'><div class='card-body'><h5 class='card-title'>"+librosPorC[i].title+"</h5><p class='card-text'>Autor: "+librosPorC[i].authors+"</p><a href='Libro.html' class='btn btn-primary'>Reservar</a></div><div class='card-footer text-muted'>5 Disponibles</div></div>";
+            librosHTML += "<div class='libro'><img class='card-img-top' src='"+ librosPorC[i].thumbnailUrl +"' alt='Card image cap'><div class='card-body'><h5 class='card-title'>"+librosPorC[i].title+"</h5><p class='card-text'>Autor: "+librosPorC[i].authors+"</p><a  id='btnHref"+i+"' onclick='libroR(\""+librosPorC[i].title+"\")' href='Libro.html' class='btn btn-primary'>Reservar</a></div><div class='card-footer text-muted'>5 Disponibles</div></div>";
         }
         
         $("#resulLibros").html(librosHTML);
@@ -96,18 +110,16 @@ $('#exampleFormControlSelectg').change(function() {
             }
         }
         for(var i = 0;i < librosPorC.length; i++){
-            librosHTML += "<div class='libro'><img class='card-img-top' src='"+ librosPorC[i].thumbnailUrl +"' alt='Card image cap'><div class='card-body'><h5 class='card-title'>"+librosPorC[i].title+"</h5><p class='card-text'>Autor: "+librosPorC[i].authors+"</p><a href='Libro.html' class='btn btn-primary'>Reservar</a></div><div class='card-footer text-muted'>5 Disponibles</div></div>";
+            librosHTML += "<div class='libro'><img class='card-img-top' src='"+ librosPorC[i].thumbnailUrl +"' alt='Card image cap'><div class='card-body'><h5 class='card-title'>"+librosPorC[i].title+"</h5><p class='card-text'>Autor: "+librosPorC[i].authors+"</p><a  id='btnHref"+i+"' onclick='libroR(\""+librosPorC[i].title+"\")' href='Libro.html' class='btn btn-primary'>Reservar</a></div><div class='card-footer text-muted'>5 Disponibles</div></div>";
         }
         
         $("#resulLibros").html(librosHTML);
     }
-
-    
-
-
     
 
 });
+
+
 
 
 

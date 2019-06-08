@@ -10,7 +10,7 @@
     <meta name="author" content="JorgeMuños-Juan Minu" />
 
     <!--     Styles     -->
-    <link rel="stylesheet" href="css/css/Libro/bootstrap.css" />
+    <link rel="stylesheet" href="css/css/libro/bootstrap.css" />
 
     <link rel="stylesheet" href="css/css/Libro/coming-sssoon.css" />
     <link rel="stylesheet" href="css/css/Libro/rotating-card.css">
@@ -27,7 +27,6 @@
             $("#datepickerOne").datepicker();
             $("#datepicker").datepicker();
         });
-
     </script>
     <script src="app.js"></script>
 
@@ -48,74 +47,95 @@
 
     </nav>
 
-<article class="my-3">
-        
-        <div class="mx-5 my-5 card col-md-11 " style="height: 280px;">
-            
-                <div class="col-md-12" >
-                    <h4>Estado de: Jorge Armando Muñoz</h4>
-                </div>
-            
-                <div class="mb-3 " >
-                    <div class="row no-gutters  ">
-                        <div>
-                            <h1 class="">Solicitud</h1>
-                        </div>
-                        <div class="col-md-4 cover my-3  " >
-                            <img src="images/biblio3.jpg" class="card-img" alt="...">
-                        </div>
-                        
-                        <div class="mx-4 my-2 col-md-3 shadow p-4 mb-3 bg-white rounded" >
-                            <div class="car-body">
-                                <h6>Titulo: Si, si es contigo</h6>
-                                <h6>Autor: Natalia parra ramirez</h6>
-                                <h6>Cateoria: Literatura juvenil</h6>
-                                <h6>Disponiles: 10</h6>
-                                <h6>Edicion: 1</h6>
-                                <h6>Idioma: Español</h6>
+    <article>
 
-                                <h6>Existentes: 12</h6>
-                                <h6>ISBN: 123b49</h6>
-                            </div>
-                        </div>
-                        <div class="col-md-1"></div>
-                        <div class="my-2 col-md-3 shadow p-2 mb-3 bg-white rounded">
-                            <h4 class="text-center mb-5">Tiempo de reserva</h4>
-                            <div class="mb-3">
-                                <label class="required">
-						      		<a class="">Inicio :</a>
-                                <input class="mx-4" type="text" id="datepicker" name="card_expiry" maxlength="7" placeholder="  mm/dd/aaaa"
-                                    required >
-                                </label>
-                            </div>
-                            <div class="">
-                                <label class="required">
-						      		<a class="mx-2">Fin :</a>
-                                <input class="mx-4" type="text" id="datepickerOne" name="card_expiry" maxlength="7" placeholder="  mm/dd/aaaa"
-                                    required>
-                                </label>
-                            </div>
-                          
-                        </div>
-                    </div>
-               
+        <div class="mx-5 my-1 card col-md-11 " style="height:280px;">
+            
+            <div class="col-md-12">
+                <h4>Estado de: Jorge Armando Muñoz</h4>
             </div>
 
+            <div class=" alert alert-success">
+                <div class="row no-gutters  ">
+                    <div class="col-md-3  mx-5">
+                        <h1 class="text-center my-4">Solicitud</h1>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2 cover  ">
+                        <img src="images/biblio3.jpg" class="card-img " alt="...">
+                    </div>
+
+
+                    <div class="mx-5 col-md-3">
+                        <h4 class="text-center mb-3">Periodo Reserado</h4>
+                        <div class="mb-3">
+                            <label class="required">
+                                <a class="">Inicio :</a>
+                                <input class="" type="text" name="card_expiry" maxlength="7" placeholder="  mm/dd/aaaa" required>
+                            </label>
+                        </div>
+                        <div class="">
+                            <label class="required">
+                                <a class="mx-2">Fin :</a>
+                                <input class="" type="text" id="" name="card_expiry" maxlength="7" placeholder="  mm/dd/aaaa" required>
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class=" alert alert-danger">
+                <div class="row no-gutters  ">
+                    <div class="col-md-3  mx-5">
+                        <h1 class="text-center my-4">En Posesión</h1>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2 cover  ">
+                        <img src="images/biblio3.jpg" class="card-img " alt="...">
+                    </div>
+
+
+                    <div class="col-md-0"></div>
+                    <div class="mx-5  col-md-3">
+                        <h4 class="text-center mb-3">Periodo de Reservado</h4>
+                        <div class="mb-3">
+                            <label class="required">
+                                <a class="">Inicio :</a>
+                                <input class="" type="text" name="card_expiry" maxlength="7" placeholder="  mm/dd/aaaa" required>
+                            </label>
+                        </div>
+                        <div class="">
+                            <label class="required">
+                                <a class="mx-2">Fin :</a>
+                                <input class="" type="text" id="" name="card_expiry" maxlength="7" placeholder="  mm/dd/aaaa" required>
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-9">
+                    <h5 class="text-danger">No puede tener dos libros al mismo tiempo</h5>
+                </div>
+               
+                
+                <div class="col-md-3">
+                            <button type="button" class="btn btn-danger">Cancelar Reserva</button>
+                 </div>
+            </div>
+            
+        
+            
             
         </div>
-        <div class="row">
-            <div class="col-md-2"></div>
-            <a class="btn btn-danger btn-lg mx-5" href="index.html" role="button">Cancelar</a>
-            <div class="col-md-2"></div>
-            <a class="btn btn-success btn-lg " href="ExitoResera.html" role="button">Hacer reserva</a>
-            
-        </div>
+        
+        
     </article>
-
-
-
-
-    <!-- -->
+    
 
 
 
@@ -127,6 +147,4 @@
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>-->
 
     <footer></footer>
-</body>
-
-</html>
+</body></html>

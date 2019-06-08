@@ -357,7 +357,11 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 
 /*           Navigation Bar             */
 .logoU{
-    background-color: rgb(212, 212, 212, 0.62);
+   background-color: rgba(212, 212, 212, 0.62);
+    border-radius: 11px 11px 11px 11px;
+    -moz-border-radius: 11px 11px 11px 11px;
+    -webkit-border-radius: 11px 11px 11px 11px;
+    border: 0px solid #000000;
 }
 /**************************************************************/
 .navbar{

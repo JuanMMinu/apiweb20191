@@ -511,6 +511,11 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     padding: 6px 15px;
     color: #777777;
 }
+
+.der{
+    
+}
+
 .dropdown-menu > li:first-child > a{
     border-radius: 10px 10px 0 0;
     padding-top: 12px;
